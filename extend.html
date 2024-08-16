@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Handler</title>
+    <!-- Link to your existing CSS file -->
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Expiry Date Input (outside the modal) -->
+    <label for="expiryDate">Expiry Date:</label>
+    <input type="date" id="expiryDate">
+    <br>
+    <!-- Amount Input (outside the modal) -->
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <br>
+
+    <!-- Button to open QR code modal -->
+    <button id="openModalBtn">Open QR Code Modal</button>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Scan QR Code</h2>
+            <!-- Hidden QR Code Input -->
+            <input type="text" id="qrInput" placeholder="Scan QR code here">
+            <!-- Message box visible to user -->
+            <div id="qrMessage">Please scan the QR code now</div>
+        </div>
+    </div>
+
+    <!-- Response Modal -->
+    <div id="responseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Server Response</h2>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+
+    <!-- Link to your existing JavaScript file -->
+    <script src="extend.js"></script>
+</body>
+</html>
